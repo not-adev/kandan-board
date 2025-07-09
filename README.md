@@ -14,6 +14,23 @@ This application manages a list of todos, categorizing them into **Pending**, **
 
 ---
 
+## 🚀 Getting Started
+
+### 1. Install dependencies
+```bash
+npm i
+``` 
+
+# Run your front end 
+```bash
+npm run dev
+```
+# Run your backend 
+```bash 
+cd back-end
+npm run start
+```
+
 ## 🔐 Signup and Login
 - Secure user authentication system
 - Frontend form for data entry
@@ -63,8 +80,3 @@ This application manages a list of todos, categorizing them into **Pending**, **
 
 ---
 
-## 🚀 Getting Started
-
-### 1. Install dependencies
-```bash
-npm i
