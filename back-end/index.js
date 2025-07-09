@@ -17,13 +17,13 @@ import get_all_todos from './helper/GetTodos.js';
 const app = express();
 const server = http.createServer(app);
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://zingy-bombolone-29fd58.netlify.app/',
   credentials: true
 }));
 app.use(express.json());
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://zingy-bombolone-29fd58.netlify.app/",
     methods: ["GET", "POST"],
     credentials: true
   }
