@@ -60,7 +60,7 @@ const Signup = () => {
     e.preventDefault();
     if (validateForm(form)) {
       setLoading(true)
-      fetch("http://localhost:5000/signup", {
+      fetch("https://kandan-board-osu6.onrender.com/signup", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form)

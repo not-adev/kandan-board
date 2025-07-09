@@ -12,7 +12,7 @@ import SingleTodo from './components/SingleTodo';
 
 
 function App() {
-  const socket = io('http://localhost:5000/');
+  const socket = io('https://kandan-board-osu6.onrender.com');
   // useEffect(() => {
 
 
