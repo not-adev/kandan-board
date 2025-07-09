@@ -1,0 +1,22 @@
+[[redirects]]
+from = "/login"
+to = "https://kandan-board-osu6.onrender.com/login"
+status = 200
+force = true
+
+[[redirects]]
+from = "/signup"
+to = "https://kandan-board-osu6.onrender.com/signup"
+status = 200
+force = true
+
+[[redirects]]
+from = "/socket.io/*"
+to = "https://kandan-board-osu6.onrender.com/socket.io/:splat"
+status = 200
+force = true
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
