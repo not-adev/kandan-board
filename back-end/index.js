@@ -30,6 +30,11 @@ const io = new Server(server, {
 });
 app.use(express.static('public'));
 
+app.get('/', async (req, res) => {
+  res.send("hello from backend ")
+
+});
+
 app.post('/signup', async (req, res) => {
   const { name, email, password } = req.body;
   const response = await signup({ name, email, password })
