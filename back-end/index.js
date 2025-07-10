@@ -36,6 +36,7 @@ app.get('/', async (req, res) => {
 });
 
 app.post('/signup', async (req, res) => {
+  console.log("sinup hit")
   const { name, email, password } = req.body;
   const response = await signup({ name, email, password })
   res.send(response)

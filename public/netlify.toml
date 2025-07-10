@@ -10,11 +10,7 @@ to = "https://kandan-board-osu6.onrender.com/signup"
 status = 200
 force = true
 
-[[redirects]]
-from = "/socket.io/*"
-to = "https://kandan-board-osu6.onrender.com/socket.io/:splat"
-status = 200
-force = true
+
 
 [[redirects]]
 from = "/*"

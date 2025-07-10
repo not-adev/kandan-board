@@ -21,7 +21,7 @@ const Signup = () => {
 
     // Username: At least 3 characters, letters/numbers only
     if (!name || name.trim().length < 3) {
-      
+
       setvalidation(prev => ({ ...prev, name: true }))
       return false
     }
@@ -63,6 +63,7 @@ const Signup = () => {
       fetch("https://kandan-board-osu6.onrender.com/signup", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
         body: JSON.stringify(form)
       }).then((res) => {
 
@@ -75,9 +76,9 @@ const Signup = () => {
             push("/login", { replace: true })
           }, 900);
         }
-        else if(data.code == 1){
+        else if (data.code == 1) {
           alert("user already exist please Login")
-          push("/login" , {replace : true})
+          push("/login", { replace: true })
         }
         else {
           alert("some error please try again ")

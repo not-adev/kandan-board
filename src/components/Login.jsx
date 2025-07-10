@@ -55,6 +55,7 @@ const Login = () => {
             fetch("https://kandan-board-osu6.onrender.com/login", {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
+                credentials: 'include',
                 body: JSON.stringify(form)
             }).then((res) => {
 
@@ -70,7 +71,7 @@ const Login = () => {
                         push("/main", { replace: true })
                     }, 900);
                 }
-                else{
+                else {
                     alert("wrong email or password")
                 }
 
