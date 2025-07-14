@@ -317,7 +317,7 @@ const Manager = () => {
 
                     <Droppable droppableId="In-progress">
                         {(provided) => (
-                            <div className='w-full py-2 px-2 bg-gradient-to-br from-blue-700 to-blue-100' ref={provided.innerRef} {...provided.droppableProps}>
+                            <div className='w-full py-2 px-2 bg-gradient-to-br from-blue-700 to-blue-300' ref={provided.innerRef} {...provided.droppableProps}>
                                 <span className='font-bold text-white text-center text-2xl'>In Progress</span>
                                 {  Array.isArray(todos_InP) &&  todos_InP.map((item, index) => (
                                     <Draggable key={item._id} draggableId={item._id} index={index}>
@@ -342,7 +342,7 @@ const Manager = () => {
 
                     <Droppable droppableId="Completed">
                         {(provided) => (
-                            <div className='w-full py-2 px-2 bg-gradient-to-br from-green-700 to-green-100' ref={provided.innerRef} {...provided.droppableProps}>
+                            <div className='w-full py-2 px-2 bg-gradient-to-br from-green-700 to-green-300' ref={provided.innerRef} {...provided.droppableProps}>
                                 <span className='font-bold text-white text-center text-2xl'>Completed</span>
                                 { Array.isArray(todos_complete) &&  todos_complete.map((item, index) => (
                                     <Draggable key={item._id} draggableId={item._id} index={index}>
