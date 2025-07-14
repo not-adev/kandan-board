@@ -292,7 +292,7 @@ const Manager = () => {
                 <div className='main_container flex gap-x-2 justify-around items-start w-[90vw] '>
                     <Droppable droppableId="Todo">
                         {(provided) => (
-                            <div className='bg-gradient-to-br gap-y-2  from-red-700 to-red-400 py-2 px-2 w-full' ref={provided.innerRef} {...provided.droppableProps}>
+                            <div className='bg-gradient-to-br  from-red-700 to-red-400 py-2 px-2 w-full' ref={provided.innerRef} {...provided.droppableProps}>
                                 <span className='font-bold text-white text-center text-2xl'>Todo</span>
                                 {  Array.isArray(todos) && todos.map((item, index) => (
                                     <Draggable key={item._id} draggableId={item._id} index={index}>
